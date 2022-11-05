@@ -1,0 +1,121 @@
+<div class="">
+    <p-card>
+        <form [formGroup]="formMascota">
+            <h2> 
+                <i><b>Datos de la Mascota</b></i>
+            </h2>
+
+            <div class="grid p-fluid">
+                <div class="col-12 md:col-6 lg col-6">
+                    <span class="p-float-label">
+                        <input type="text" id="nombreMascota" pInputText formControlName="nombreMascota"> 
+                        <label for="nombreMascota">Nombre</label>
+                    </span>
+                </div>
+
+                <div class="col-12 mt-2 md:mt-0 lg:mt-0 md:col-6 lg col-6">
+                    <span class="p-float-label">
+                        <input type="text" id="nExpediente" pInputText formControlName="expediente"> 
+                        <label for="nExpediente">Número de expediente</label>
+                    </span>
+                </div>
+
+                <div class="col-12 mt-2 md:mt-0 lg:mt-0 md:col-6 lg col-6">
+                    <span class="p-float-label">
+                        <input type="text" id="fechaMascota" pInputText formControlName="fechaMascota"> 
+                        <label for="fechaMascota">Fecha de nacimiento</label>
+                    </span>
+                </div>
+
+                <div class="col-12 mt-2 md:mt-0 lg:mt-0 md:col-6 lg col-6">
+                    <span class="p-float-label">
+                        <input type="text" id="fechaMascota" pInputText formControlName="sexoMascota"> 
+                        <label for="fechaMascota">Sexo</label>
+                    </span>
+                </div>
+
+                <div class="col-12 mt-2 md:mt-0 lg:mt-0 md:col-6 lg col-6">
+                    <span class="p-float-label">
+                        <input type="text" id="raza" pInputText formControlName="raza"> 
+                        <label for="raza">Raza</label>
+                    </span>
+                </div>
+
+                <div class="col-12 mt-2 md:mt-0 lg:mt-0 md:col-6 lg col-6">
+                    <span class="p-float-label">
+                        <input type="text" id="color" pInputText formControlName="color"> 
+                        <label for="color">Color</label>
+                    </span>
+                </div>
+
+                <div class="col-12 mt-2 md:mt-0 lg:mt-0 md:col-6 lg col-6">
+                    <span class="p-float-label">
+                        <input type="text" id="descripcion" pInputText formControlName="descripcionMascota"> 
+                        <label for="descripcion">Señas particulares</label>
+                    </span>
+                </div>
+
+                <div class="col-12 mt-2 md:mt-0 lg:mt-0 md:col-6 lg col-6">
+                    <span class="p-float-label">
+                        <input type="text" id="mircroChip" pInputText formControlName="microchip"> 
+                        <label for="mircroChip">ID microchip</label>
+                    </span>
+                </div>
+
+                <div class="col-12 mt-2 md:mt-0 lg:mt-0 md:col-6 lg col-6">
+                    <span>
+                        <input type="radio" name='animal' id="animal" value="gato" formControlName="animal"> Gato
+                        <input type="radio" name='animal' id="animal" value="perro" formControlName="animal"> Perro
+                    </span>
+                </div>
+                <br><br>
+
+                <div style="width: 100%;">
+                    <p-divider type="solid"></p-divider>
+                </div>
+
+                <h2 class="col-12"> 
+                    <i><b>Datos del propietario</b></i>
+                </h2>
+
+                <div class="col-12 mt-2 md:mt-0 lg:mt-0 md:col-6 lg col-6">
+                    <span class="p-float-label">
+                        <input type="text" id="nombrePropietario" pInputText formControlName="nombrePropietario"> 
+                        <label for="nombrePropietario">Nombre</label>
+                    </span>
+                </div>
+
+                <div class="col-12 mt-2 md:mt-0 lg:mt-0 md:col-6 lg col-6">
+                    <span class="p-float-label">
+                        <input type="text" id="direccionPropietario" pInputText formControlName="direccion"> 
+                        <label for="direccionPropietario">Direccion</label>
+                    </span>
+                </div>
+
+                <div class="col-12 mt-2 md:mt-0 lg:mt-0 md:col-6 lg col-6">
+                    <span class="p-float-label">
+                        <input type="text" id="telefonoPropietario" pInputText formControlName="telefono"> 
+                        <label for="telefonoPropietario">Telefono</label>
+                    </span>
+                </div>
+
+                <div class="col-12 mt-2 md:mt-0 lg:mt-0 md:col-6 lg col-6">
+                    <span class="p-float-label">
+                        <input type="text" id="correoPropietario" pInputText formControlName="correo"> 
+                        <label for="correoPropietario">Correo electronico</label>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="flex align-items-end justify-content-center">
+                <button label="Enviar" icon="pi pi-send" pButton pRipple
+                        class="p-button-outlined p-button-text p-button-raised p-button-secondary purple mt-4 mr-2"
+                        (click)="registrar()">
+                </button>
+            </div>
+
+        </form>
+    </p-card>
+
+</div>

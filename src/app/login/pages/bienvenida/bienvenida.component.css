@@ -1,0 +1,16 @@
+.contenedor-hueso {
+    position: absolute; 
+    width: 500px;
+    height: 500px; 
+}
+
+.imagenH {
+    width: 95%;
+}
+
+@media (max-width: 600px) {
+    .contenedor-hueso{
+        width: 300px;
+    }
+    
+}

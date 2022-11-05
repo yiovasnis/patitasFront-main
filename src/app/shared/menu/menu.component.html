@@ -1,0 +1,11 @@
+<p-menubar [model]="items">
+    <ng-template #name pTemplate="end">
+        <button pButton pRipple type="button" label="Escanear" 
+                class="p-button-outlined p-button-text p-button-raised p-button-secondary purple mr-4"
+                (click)="escanear()"></button>
+
+        <button pButton pRipple type="button" label="Salir" 
+                class="p-button-outlined p-button-text p-button-raised p-button-secondary purple"
+                (click)="salir()"></button>
+    </ng-template>
+</p-menubar>

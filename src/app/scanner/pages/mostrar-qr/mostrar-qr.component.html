@@ -1,0 +1,13 @@
+
+<div class="flex flex-column align-items-center justify-content-center">
+    <qrcode #parent [qrdata]="urlQr" [elementType]="'canvas'" [width]="250"></qrcode>
+
+    <div class="flex flex-wrap align-items-center justify-content-center">
+        <button pButton pRipple (click)="saveAsImage(parent)" label="Descargar QR"
+                class="p-button-outlined p-button-text p-button-raised p-button-secondary purple"></button>
+    
+        <button pButton pRipple label="Cerrar"
+        class="p-button-outlined p-button-text p-button-raised p-button-secondary purple ml-3"
+        (click)="cerrarVentana()"></button>
+    </div>
+</div>

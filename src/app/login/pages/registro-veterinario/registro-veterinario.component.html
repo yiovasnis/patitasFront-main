@@ -1,0 +1,120 @@
+<div class="flex flex-column align-items-center justify-content-center">
+    <p-card>
+        <h1 class="flex flex-column align-items-center justify-content-center text-center">Registrar Veterinario</h1>
+    
+        <form [formGroup]="formularioRegistro">
+    
+            <div class="grid p-fluid">
+                <div class="col-12 lg:col-6 md:col-6">
+                    <div class="p-inputgroup">
+                        <span class="p-float-label">
+                            <input id="clinica" type="text" pInputText autocomplete="off" formControlName="clinica">
+                            <label for="clinica">Nombre de la clínica</label>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="col-12 mt-2 lg:col-6 md:col-6 lg:mt-0 md:mt-0">
+                    <div class="p-inputgroup">
+                        <span class="p-float-label">
+                            <input id="nombreMedico" type="text" pInputText autocomplete="off" formControlName="nombreMedico">
+                            <label for="nombreMedico">Nombre del médico</label>
+                        </span>
+                    </div>
+                </div>
+    
+            </div>
+    
+            
+    
+            <div class="grid p-fluid">
+                <div class="col-12 mt-4 lg:col-6 md:col-6">
+                    <div class="p-inputgroup">
+                        <span class="p-float-label">
+                            <input id="cedula" type="text" pInputText autocomplete="off" formControlName="cedula">
+                            <label for="cedula">Cédula profesional*</label>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="col-12 mt-2 lg:col-6 md:col-6 lg:mt-4 md:mt-4">
+                    <div class="p-inputgroup">
+                        <span class="p-float-label">
+                            <input id="direccion" type="text" pInputText autocomplete="off" formControlName="direccion">
+                            <label for="direccion">Direccion</label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="grid p-fluid">
+                <div class="col-12 mt-4 lg:col-6 md:col-6">
+                    <div class="p-inputgroup">
+                        <span class="p-float-label">
+                            <input id="telefono" type="text" pInputText autocomplete="off" formControlName="telefono">
+                            <label for="telefono">Teléfono</label>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="col-12 mt-2 lg:col-6 md:col-6 lg:mt-4 md:mt-4">
+                    <div class="p-inputgroup">
+                        <span class="p-float-label">
+                            <input id="correo" type="text" pInputText autocomplete="off" formControlName="correo">
+                            <label for="correo">Correo electrónico*</label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="grid p-fluid">
+                <div class="col-12 mt-4">
+                    <span class="p-float-label">
+                        <p-password [toggleMask]="true" [feedback]="false" formControlName="password"></p-password>
+                        <label for="password">Contraseña*</label>
+                    </span>
+                </div>
+            </div>
+            
+              
+            <div class="flex align-items-center justify-content-center">
+                <button pButton pRipple type="button" label="Registrarse" 
+                        class="mt-4 p-button-outlined p-button-text p-button-raised p-button-secondary purple"
+                        [disabled]="formularioRegistro.invalid"
+                        (click)="registrar()"></button>
+            </div>
+        </form>
+    </p-card>
+</div>
+
+<p-dialog [(visible)]="display" position="top" [modal]="true" [closable]="false" [style]="{width: '50vw'}">
+
+    <div class="grid flex align-items-center justify-content-center">
+
+        <h2 class="col-12 flex flex-column align-items-center justify-content-center text-center">¡Usuario Registrado!</h2>
+
+        <div class="col-6 flex justify-content-end" style="padding: 0;">
+            <img src="../../../../assets/img/cat.png" width="105%">
+        </div>
+
+        <div class="col-6" style="padding: 0;">
+            <img src="../../../../assets/img/dog.png" width="105%" >
+        </div>
+
+        <div class="col-12 flex flex-column align-items-center justify-content-center text-center" style="font-size: 13px;">
+            <small>
+                <a href="https://www.flaticon.com/free-stickers/falling-in-love" title="falling in love stickers">Falling in love stickers created by MrHamster - Flaticon</a>
+            </small>
+        </div>
+       
+        <div class="flex align-items-center justify-content-center">
+
+            <button pButton pRipple type="button" label="Aceptar"
+                            class="mt-4 p-button-outlined p-button-text p-button-raised p-button-secondary purple"
+                            (click)="aceptar()">
+            </button>
+        </div>
+    </div>
+
+</p-dialog>
+

@@ -1,0 +1,62 @@
+<app-menu></app-menu>
+<div class="mt-4">
+    <p-card>
+        <form [formGroup]="mascota">
+            <div class="p-inputgroup">
+    
+                <div class="p-float-label mr-4">
+                    <input type="text" pInputText formControlName="nombreMascota">
+                    <label for="float-input">Nombre de la mascota:</label>
+                </div>
+    
+    
+                <div class="p-float-label">
+                    <input type="text" pInputText formControlName="expediente">
+                    <label for="float-input">Número de expediente médico:</label>
+                </div>
+            </div>
+    
+            <div class="p-inputgroup mt-6">
+    
+                <div class="p-float-label mr-4">
+                    <input type="text" pInputText formControlName="fechaMascota">
+                    <label for="float-input">Fecha de naciemiento:</label>
+                </div>
+    
+    
+                <div class="p-float-label">
+                    <input type="text" pInputText formControlName="sexoMascota">
+                    <label for="float-input">Sexo:</label>
+                </div>
+            </div>
+    
+            <div class="p-inputgroup mt-6">
+    
+                <div class="p-float-label mr-4">
+                    <input type="text" pInputText formControlName="raza">
+                    <label for="float-input">Raza:</label>
+                </div>
+    
+    
+                <div class="p-float-label">
+                    <input type="text" pInputText formControlName="color">
+                    <label for="float-input">Color:</label>
+                </div>
+            </div>
+    
+            <div class="p-inputgroup mt-6">
+    
+                <div class="p-float-label mr-4">
+                    <input type="text" pInputText formControlName="descripcionMascota">
+                    <label for="float-input">Señas particulares:</label>
+                </div>
+    
+    
+                <div class="p-float-label">
+                    <input type="text" pInputText formControlName="microchip">
+                    <label for="float-input">ID microchip:</label>
+                </div>
+            </div>
+        </form>
+    </p-card>
+</div>

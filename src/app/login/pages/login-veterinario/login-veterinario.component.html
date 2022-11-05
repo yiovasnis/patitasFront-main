@@ -1,0 +1,26 @@
+
+<div class="flex flex-column align-items-center justify-content-center">
+    
+    <h1>Iniciar Sesión</h1>
+    <form [formGroup]="formLogin">
+        <span class="p-float-label p-input-icon-right">
+            <i class="pi pi-user"></i>
+            <input id="correo" type="text" pInputText formControlName="correo" autocomplete="off">
+            <label for="correo">Correo electronico</label>
+        </span> <br>
+        
+        <span class="p-float-label mt-5">
+            <p-password [toggleMask]="true" [feedback]="false" formControlName="password"></p-password>
+            <label for="password">Contraseña</label>
+        </span>
+        
+        
+        
+        <div class="flex align-items-center justify-content-center">
+            <button pButton pRipple type="button" label="Entrar" 
+                    class="mt-4 p-button-outlined p-button-text p-button-raised p-button-secondary purple"
+                    (click)="login()" [disabled]="formLogin.invalid"></button>
+        </div>
+    </form>
+</div>
+

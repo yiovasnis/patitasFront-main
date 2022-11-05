@@ -1,0 +1,37 @@
+<app-menu></app-menu>
+
+<div class="mt-4">
+    <p-card>
+        <form [formGroup]="propietario">
+            
+            <div class="p-inputgroup">
+    
+                <div class="p-float-label mr-4">
+                    <input type="text" pInputText formControlName="nombrePropietario">
+                    <label for="float-input">Nombre:</label>
+                </div>
+    
+    
+                <div class="p-float-label">
+                    <input type="text" pInputText formControlName="direccion">
+                    <label for="float-input">Direccion:</label>
+                </div>
+            </div>
+    
+            <div class="p-inputgroup mt-6">
+    
+                <div class="p-float-label mr-4">
+                    <input type="text" pInputText formControlName="telefono">
+                    <label for="float-input">Telefono:</label>
+                </div>
+    
+    
+                <div class="p-float-label">
+                    <input type="text" pInputText formControlName="correo">
+                    <label for="float-input">Correo electronico:</label>
+                </div>
+            </div>
+
+        </form>
+    </p-card>
+</div>

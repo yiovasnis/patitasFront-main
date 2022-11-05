@@ -1,0 +1,69 @@
+<app-menu></app-menu>
+
+<div class="mt-4">
+    <p-card>
+        <form [formGroup]="formVeterinario">
+            
+            <div class="p-inputgroup">
+
+                <div class="p-float-label mr-4">
+                    <input type="text" pInputText formControlName="clinica">
+                    <label for="float-input">Nombre Clinica:</label>
+                </div>
+    
+    
+                <div class="p-float-label">
+                    <input type="text" pInputText formControlName="nombreMedico">
+                    <label for="float-input">Nombre Médico:</label>
+                </div>
+            </div>
+
+            <div class="p-inputgroup mt-6">
+
+                <div class="p-float-label mr-4">
+                    <input type="text" pInputText formControlName="cedula">
+                    <label for="float-input">Cédula Profesional:</label>
+                </div>
+    
+    
+                <div class="p-float-label">
+                    <input type="text" pInputText formControlName="direccion">
+                    <label for="float-input">Dirección:</label>
+                </div>
+            </div>
+
+            <div class="p-inputgroup mt-6">
+
+                <div class="p-float-label mr-4">
+                    <input type="text" pInputText formControlName="telefono">
+                    <label for="float-input">Teléfono:</label>
+                </div>
+    
+    
+                <div class="p-float-label">
+                    <input type="text" pInputText formControlName="correo">
+                    <label for="float-input">Correo electrónico:</label>
+                </div>
+            </div>
+
+
+            <div class="flex align-items-end justify-content-end">
+                <button label="Registrar mascota" icon="pi pi-book" pButton pRipple
+                        class="p-button-outlined p-button-text p-button-raised p-button-secondary purple mt-4 mr-2"
+                        (click)="registrarMascota()">
+                </button>
+
+                <button label="Guardar" icon="pi pi-pencil" pButton pRipple
+                        class="p-button-outlined p-button-text p-button-raised p-button-secondary purple mt-4"
+                        (click)="guardar()">
+                </button>
+
+            </div>
+
+        </form>
+
+        
+    </p-card>
+    
+</div>
+<p-toast [breakpoints]="{'920px': {width: '90%'}}"></p-toast>

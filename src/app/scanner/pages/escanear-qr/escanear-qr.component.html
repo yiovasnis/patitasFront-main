@@ -1,0 +1,5 @@
+
+<div style="width: 100%;" class="flex align-items-center justify-content-center">
+    <zxing-scanner [formats]="allowedFormats" (scanSuccess)="scann( $event )"
+    (camerasFound)="camaras($event)" style="height: 100px;"></zxing-scanner>
+</div>
